@@ -1,0 +1,9 @@
+$medium-grey: #c2c6cb;
+
+.footer {
+  display: flex;
+  justify-content: flex-end;
+  height: 65px;
+  padding: 0 20px;
+  border-top: 1px solid $medium-grey;
+}
