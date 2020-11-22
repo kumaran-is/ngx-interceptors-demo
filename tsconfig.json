@@ -47,6 +47,9 @@
       ],
       "@features/*": [
         "src/app/features/*"
+      ],
+      "@env/*": [
+        "src/environments/*"
       ]
     }
   }
