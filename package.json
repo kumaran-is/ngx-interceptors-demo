@@ -11,7 +11,7 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "git-publish": "npm run start:prod && npx angular-cli-ghpages --dir=dist/ngx-interceptors-demo--branch=gh-pages"
+    "git-publish": "npm run build:prod && npx angular-cli-ghpages --dir=dist/ngx-interceptors-demo --branch=gh-pages"
   },
   "private": true,
   "dependencies": {

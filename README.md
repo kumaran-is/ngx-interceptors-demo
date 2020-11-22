@@ -1,27 +1,52 @@
 # NgxInterceptorsDemo
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.0.2.
+There are 2 ways you can launch the application :
 
-## Development server
+1. Application is hosted on `Github Pages`, you can launch the application on your browser directly, by [clicking here](https://kumaran-is.github.io/ngx-interceptors-demo).
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+2. Launch the application on [StackBlitz](https://stackblitz.com/), by [clicking here](https://stackblitz.com/github/kumaran-is/ngx-interceptors-demo). [StackBlitz](https://stackblitz.com/) is a online code editor built on top of vscode editor, where you can edit and see your changes on the fly.
 
-## Code scaffolding
+**Table of contents:**
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+1. [Dependencies and Libraries](#dependencies-and-libraries)
+2. [Quick Start](#quick-start)
+3. [Status and Issues](#status-and-issues)
 
-## Build
+## Dependencies and Libraries
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+Library | Version | Notes
+:-------|:--------:|-------
+[Node](https://nodejs.org/) | 12.13.x | Recommended NodeJS version
+[NPM](https://nodejs.org/) | 6.12.x | Recommended NPM version
+[Angular](https://angularjs.org/) | 11.x.x. | JavaScript-based open-source front-end SPA framework
 
-## Running unit tests
+## Quick Start
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+1. Clone repository and enter it
 
-## Running end-to-end tests
+  ```bash
+  git clone https://github.com/kumaran-is/ngx-interceptors-demo.git
+  cd covid-tracker
+  ```
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+2. Install NPM and Bower dependencies
 
-## Further help
+  ```bash
+  npm install
+  ```
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+3. Run the application locally. Navigate to <http://localhost:4200/>. The app will automatically reload if you change any of the source files.
+
+  ```bash
+ npm run start:dev
+ 
+ or
+
+ npm run start:prod
+  ```
+
+## Status and Issues
+
+* [Change History](./CHANGELOG.md).
+* [Issue tracker](https://github.com/kumaran-is/ngx-interceptors-demo/issues?state=open)
