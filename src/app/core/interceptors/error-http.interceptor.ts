@@ -26,7 +26,6 @@ export class ErrorHttpInterceptor implements HttpInterceptor {
     this.requests.push(request);
 
     console.log('No of requests--->' + this.requests.length);
-    // this.loadingService.showLoader();
     this.loadingService.showLoader();
 
     return next.handle(request)
@@ -63,9 +62,8 @@ export class ErrorHttpInterceptor implements HttpInterceptor {
           return throwError(error);
         }),
         finalize(() => {
+          console.log('>>>>>finalize>>>>>>')
           this.removeRequest(request);
-          // hide loading spinner
-          this.loadingService.hideLoader();
         })
       );
   }
@@ -75,10 +73,8 @@ export class ErrorHttpInterceptor implements HttpInterceptor {
     if (index >= 0) {
       this.requests.splice(index, 1);
     }
-    if(this.requests.length > 0)
+    if(this.requests.length === 0)
     {
-      this.loadingService.showLoader();
-    } else {
       this.loadingService.hideLoader()
     }
   }
