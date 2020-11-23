@@ -1,22 +1,24 @@
-<section class="cardContainer" >
-  <span class="cardTitleText">{{ country?.name }}</span>
-    <div class="flagIconContainer" >
-     <img [src]="country?.flag" height="200" width="300" >
+<mat-card class="card">
+  <mat-card-header>
+    <mat-card-title>{{ country?.name }}</mat-card-title>
+  </mat-card-header>
+  <img mat-card-image [src]="country?.flag" alt="weather">
+  <mat-card-content>
+    <div>
+      <span class="label">Capital :</span>
+      <span>{{ country?.capital }}</span>
     </div>
     <div>
-        <span class="label-black">Captial :</span>
-        <span class="dataText-black">{{ country?.capital }}</span>
+      <span class="label">Region :</span>
+      <span>{{ country?.region }}</span>
     </div>
     <div>
-        <span class="label-black">Region :</span>
-        <span class="dataText-black">{{ country?.region }}</span>
+      <span class="label">Population :</span>
+      <span>{{ country?.population | number }}</span>
     </div>
     <div>
-      <span class="label-black">Population :</span>
-      <span class="dataText-black">{{ country?.population | number }}</span>
-  </div>
-  <div>
-      <span class="label-black">Currency :</span>
-      <span class="dataText-black">{{ country?.currency }}</span>
-  </div>
-</section>
+      <span class="label">Currency :</span>
+      <span>{{ country?.currency }}</span>
+    </div>
+  </mat-card-content>
+</mat-card>

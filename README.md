@@ -20,7 +20,7 @@ Library | Version | Notes
 [Node](https://nodejs.org/) | 12.13.x | Recommended NodeJS version
 [NPM](https://nodejs.org/) | 6.12.x | Recommended NPM version
 [Angular](https://angularjs.org/) | 11.x.x. | JavaScript-based open-source front-end SPA framework
-
+[Angular Material](https://material.angular.io/) | 11.x.x. | Material Design components for Angular
 ## Quick Start
 
 1. Clone repository and enter it

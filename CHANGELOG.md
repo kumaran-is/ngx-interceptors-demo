@@ -1,3 +1,13 @@
+## 0.4.0 (2020-11-22)
+
+#### Features
+
+* Updated page and components styles using [Angular Material v11](https://material.angular.io/) [PR 3](https://github.com/kumaran-is/ngx-interceptors-demo/pull/3).
+
+#### Bug Fixes
+
+* NA
+
 ## 0.3.0 (2020-11-22)
 
 #### Features

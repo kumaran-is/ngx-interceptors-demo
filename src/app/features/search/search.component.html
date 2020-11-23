@@ -1,7 +1,10 @@
 <section class="page-container" >
   <app-page-title [pageTitle]=pageTitle></app-page-title>
   <div class ="searchContainer" >
-    <input [formControl]="searchControl"  type="search"  id="searchbyCountry"  placeholder="Search Country" >
+    <mat-form-field appearance="outline">
+      <mat-label>Search By Country</mat-label>
+      <input matInput [formControl]="searchControl"  type="search"  id="searchbyCountry"  placeholder="Search By Country" >
+    </mat-form-field>
   </div>
 
   <ng-container *ngIf="isLoading">

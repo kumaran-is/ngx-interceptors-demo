@@ -9,6 +9,7 @@ import { Country } from '@models/country';
 })
 export class CountryTableComponent {
   @Input() public countries: Country[];
+  displayedColumns: string[] = ['#', 'name', 'flag', 'capital', 'region', 'population', 'currency'];
 
   public trackByFn(index: any, item: any) {
     return index;

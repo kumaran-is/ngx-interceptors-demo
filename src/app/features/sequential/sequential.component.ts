@@ -16,9 +16,6 @@ import { catchError, mergeMap } from 'rxjs/operators';
 export class SequentialComponent {
 
   public pageTitle = CoreConstants.SEQUENTIAL_PAGE_TITLE;
-  public weather: Weather;
-  public errorMessage = '';
-  public noDataAvailable = '';
   public weather$: Observable<Weather>;
 
   constructor(
@@ -26,18 +23,8 @@ export class SequentialComponent {
     private weatherService: WeatherService
   ) { }
 
-  public populateCapitalWeather(countryName: string) {
-    this.countryService.getCountryDetail(countryName)
-      .subscribe(countryResponse => this.weatherService.getWeatherByCityName(countryResponse.capital)
-        .subscribe(
-          (response) => this.onNext(response),
-          (error) => this.onError(error),
-          () =>  this.onComplete()
-        )
-    );
-  }
 
-  public populateCapitalWeatherPlus(countryName: string) {
+  public populateCapitalWeather(countryName: string) {
     this.weather$ = this.countryService.getCountryDetail(countryName)
       .pipe (
         mergeMap((countryResponse: Country) => {
@@ -45,18 +32,6 @@ export class SequentialComponent {
         }),
         catchError(this.handleError.bind(this)),
       );
-  }
-
-  private onNext(response) {
-    return this.weather = response;
-  }
-
-  private onError(error) {
-    console.error(error);
-  }
-
-  private onComplete() {
-    console.log('Processing is Complete');
   }
 
   private handleError(error: HttpErrorResponse | any): Observable<any> {
