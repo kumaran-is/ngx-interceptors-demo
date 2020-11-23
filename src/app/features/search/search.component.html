@@ -1,4 +1,13 @@
 <section class="page-container" >
   <app-page-title [pageTitle]=pageTitle></app-page-title>
+  <div class ="searchContainer" >
+    <input [formControl]="searchControl"  type="search"  id="searchbyCountry"  placeholder="Search Country" >
+  </div>
+
+  <ng-container *ngIf="isLoading">
+    <div class="loader"></div>
+  </ng-container>
+
+  <app-country-table id="demo6" [countries]="countries$ | async"> </app-country-table>
 </section>
 

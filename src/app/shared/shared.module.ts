@@ -23,6 +23,7 @@ import { WeatherCardComponent } from '@components/weather-card/weather-card.comp
   ],
   exports: [
     CommonModule,
+    ReactiveFormsModule,
     MatButtonModule,
     AgGridModule,
     PageTitleComponent,
