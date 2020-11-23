@@ -1,12 +1,15 @@
 <section class="page-container" >
   <app-page-title [pageTitle]=pageTitle></app-page-title>
   <div class ="searchContainer" >
-    <input type="text" #searchCountryAndCapitalCityWeather id="searchCountryAndCapitalCityWeather"
-    placeholder="Capital City Name" >
+    <mat-form-field appearance="outline">
+      <mat-label>Country Name</mat-label>
+      <input matInput type="search" #searchCountryAndCapitalCityWeather id="searchCountryAndCapitalCityWeather"
+      placeholder="Capital City Name" >
+    </mat-form-field>
     <span class="space"></span>
-    <input type="button"
-    (click)="populateCountryDetailAndCapitalCityWeather(searchCountryAndCapitalCityWeather.value)"
-     value ="Populate Country and Weather" >
+    <button mat-raised-button color="primary"
+    (click)="populateCountryDetailAndCapitalCityWeather(searchCountryAndCapitalCityWeather.value)" >
+    Populate Country and Weather</button>
   </div>
 
   <div *ngIf="combinedResponse$ | async; let combinedData; else displayErrorMessage" >
