@@ -73,7 +73,7 @@ export class ErrorHttpInterceptor implements HttpInterceptor {
     if (index >= 0) {
       this.requests.splice(index, 1);
     }
-    if(this.requests.length === 0)
+    if(this.requests.length === 0 && this.loadingService.isLoaderOpen)
     {
       this.loadingService.hideLoader()
     }

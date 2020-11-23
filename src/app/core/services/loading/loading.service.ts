@@ -35,4 +35,8 @@ export class LoadingService {
     console.log('hideLoader >>>>> ', this.opened)
     this.dialogRef.close();
   }
+
+  isLoaderOpen() {
+    return this.opened;
+  }
 }
