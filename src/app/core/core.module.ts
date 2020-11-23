@@ -1,7 +1,8 @@
 import { NgModule, Optional, SkipSelf } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { HttpClientModule } from '@angular/common/http';
-
+import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
+import { AuthHttpInterceptor } from '@interceptors/auth-http.interceptor';
+import { ErrorHttpInterceptor } from '@interceptors/error-http.interceptor';
 
 @NgModule({
   declarations: [],
@@ -9,7 +10,17 @@ import { HttpClientModule } from '@angular/common/http';
     CommonModule,
     HttpClientModule
   ],
-  exports: [HttpClientModule]
+  exports: [HttpClientModule],
+  providers: [{
+    provide: HTTP_INTERCEPTORS,
+    useClass: ErrorHttpInterceptor,
+    multi: true
+  },
+  {
+    provide: HTTP_INTERCEPTORS,
+    useClass: AuthHttpInterceptor,
+    multi: true
+  }]
 })
 export class CoreModule {
   /* make sure CoreModule is imported only by one NgModule i.e the AppModule
