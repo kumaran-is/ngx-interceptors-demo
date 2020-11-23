@@ -7,7 +7,7 @@ import {
   HttpRequest } from '@angular/common/http';
 import { Observable, throwError} from 'rxjs';
 import { catchError } from 'rxjs/operators';
-import { ErrorModalService } from '@services/error-modal/error-modal.service';
+import { ErrorModalService } from '@components/error-modal/error-modal.service';
 
 @Injectable()
 export class AuthHttpInterceptor implements HttpInterceptor {

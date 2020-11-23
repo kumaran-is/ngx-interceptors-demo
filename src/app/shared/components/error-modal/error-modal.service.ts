@@ -3,9 +3,7 @@ import { MatDialog } from "@angular/material/dialog";
 import { ErrorWrapper } from '@interfaces/error-wrapper.interface';
 import { ErrorModalComponent } from '@components/error-modal/error-modal.component';
 
-@Injectable({
-  providedIn: 'root'
-})
+@Injectable()
 export class ErrorModalService {
 
   private opened = false;

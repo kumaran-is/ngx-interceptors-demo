@@ -9,8 +9,8 @@ import {
 } from '@angular/common/http';
 import { Observable, throwError} from 'rxjs';
 import { catchError, delay, tap, finalize } from 'rxjs/operators';
-import { LoadingService } from '@services/loading/loading.service';
-import { ErrorModalService } from '@services/error-modal/error-modal.service';
+import { LoadingService } from '@components/loading/loading.service';
+import { ErrorModalService } from '@components/error-modal/error-modal.service';
 
 @Injectable()
 export class ErrorHttpInterceptor implements HttpInterceptor {

@@ -2,9 +2,7 @@ import { Injectable } from '@angular/core';
 import { MatDialogRef, MatDialog } from "@angular/material/dialog";
 import { LoadingComponent } from '@components/loading/loading.component';
 
-@Injectable({
-  providedIn: 'root'
-})
+@Injectable()
 export class LoadingService {
 
   private opened = false;

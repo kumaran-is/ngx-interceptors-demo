@@ -14,7 +14,8 @@ import { CountryTableComponent } from '@components/country-table/country-table.c
 import { WeatherCardComponent } from '@components/weather-card/weather-card.component';
 import { ErrorModalComponent } from '@components/error-modal/error-modal.component';
 import { LoadingComponent } from '@components/loading/loading.component';
-
+import { LoadingService } from '@components/loading/loading.service';
+import { ErrorModalService } from '@components/error-modal/error-modal.service';
 @NgModule({
   declarations: [
     PageTitleComponent,
@@ -53,4 +54,14 @@ import { LoadingComponent } from '@components/loading/loading.component';
     LoadingComponent
   ]
 })
-export class SharedModule { }
+export class SharedModule {
+  static forRoot() {
+    return {
+      ngModule: SharedModule,
+      providers: [
+        LoadingService,
+        ErrorModalService
+      ],
+    };
+ }
+}
