@@ -1,22 +1,12 @@
 <section class="page-container" >
   <app-page-title [pageTitle]=pageTitle></app-page-title>
   <div class ="searchContainer" >
-    <input type="text" #searchCapitalWeather id="searchCapitalWeather"  placeholder="Country Name" >
+    <mat-form-field appearance="outline">
+      <mat-label>Country Name</mat-label>
+      <input matInput type="search" #searchCapitalWeather id="searchCapitalWeather"  placeholder="Country Name" >
+    </mat-form-field>
     <span class="space"></span>
-    <input type="button" (click)="populateCapitalWeather(searchCapitalWeather.value)" value ="Populate Capital City Weather" >
+    <button mat-raised-button color="primary" (click)="populateCapitalWeather(searchCapitalWeather.value)" >Populate Capital City Weather</button>
   </div>
-
-  <app-weather-card id="demo7" [weather]="weather"> </app-weather-card>
-
-  <div style="text-align:center">
-    <h3>Demo 8</h3>
-  </div>
-
-  <div class ="searchContainer" >
-    <input type="text" #searchCapitalWeatherPlus id="searchCapitalWeatherPlus"  placeholder="Country Name" >
-    <span class="space"></span>
-    <input type="button" (click)="populateCapitalWeatherPlus(searchCapitalWeatherPlus.value)" value ="Populate Capital City Weather" >
-  </div>
-
   <app-weather-card id="demo8" [weather]="weather$ | async"> </app-weather-card>
 </section>
