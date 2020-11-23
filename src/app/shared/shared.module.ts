@@ -4,6 +4,7 @@ import { CommonModule } from '@angular/common';
 import { AgGridModule } from 'ag-grid-angular';
 import { PageTitleComponent } from '@components/page-title/page-title.component';
 import { MatButtonModule } from '@angular/material/button';
+import { MatCardModule } from '@angular/material/card';
 import { MatInputModule } from '@angular/material/input';
 import { MatTableModule } from '@angular/material/table';
 import { CountryCardComponent } from '@components/country-card/country-card.component';
@@ -22,6 +23,7 @@ import { WeatherCardComponent } from '@components/weather-card/weather-card.comp
     ReactiveFormsModule,
     AgGridModule.withComponents([]),
     MatButtonModule,
+    MatCardModule,
     MatInputModule,
     MatTableModule
   ],
@@ -29,6 +31,7 @@ import { WeatherCardComponent } from '@components/weather-card/weather-card.comp
     CommonModule,
     ReactiveFormsModule,
     MatButtonModule,
+    MatCardModule,
     MatInputModule,
     MatTableModule,
     AgGridModule,

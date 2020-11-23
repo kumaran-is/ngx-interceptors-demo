@@ -1,4 +1,4 @@
-<section class="cardContainer" >
+<!-- <section class="cardContainer" >
   <span class="cardTitleText">{{ weather?.name }}</span>
     <div class="flagIconContainer" >
       <img src="assets/img/weather.gif" height="200" width="300" >
@@ -19,4 +19,30 @@
       <span class="label-black">Min Temp :</span>
       <span class="dataText-black">{{ weather?.minTemperature }}</span>
   </div>
+</section> -->
+<section class="cardContainer" >
+<mat-card class="card">
+  <mat-card-header>
+    <mat-card-title>{{ weather?.name }}</mat-card-title>
+  </mat-card-header>
+  <img mat-card-image src="assets/img/weather.gif" alt="weather">
+  <mat-card-content>
+    <div>
+      <span class="label">Description :</span>
+      <span>{{ weather?.description }}</span>
+    </div>
+    <div>
+      <span class="label">Current Temp :</span>
+      <span>{{ weather?.temperature }}</span>
+    </div>
+    <div>
+      <span class="label">Max Tem :</span>
+      <span>{{ weather?.maxTemperature }}</span>
+    </div>
+    <div>
+      <span class="label">Min Temp :</span>
+      <span>{{ weather?.minTemperature }}</span>
+    </div>
+  </mat-card-content>
+</mat-card>
 </section>
