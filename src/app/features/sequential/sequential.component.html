@@ -8,5 +8,7 @@
     <span class="space"></span>
     <button mat-raised-button color="primary" (click)="populateCapitalWeather(searchCapitalWeather.value)" >Populate Capital City Weather</button>
   </div>
-  <app-weather-card id="demo8" [weather]="weather$ | async"> </app-weather-card>
+  <div class="cardContainer">
+    <app-weather-card id="demo8" [weather]="weather$ | async"> </app-weather-card>
+  </div>
 </section>

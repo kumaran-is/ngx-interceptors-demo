@@ -12,6 +12,12 @@
   padding-left: 30px;
 }
 
+.cardContainer {
+  display: grid;
+  justify-items: center;
+  margin-bottom: 10px
+}
+
 span.space {
   padding: 1rem;
 }
