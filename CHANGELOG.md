@@ -1,3 +1,17 @@
+## 0.5.0 (2020-11-23)
+
+#### Features
+
+* Implemented interceptors to centralize error handling, auth error handling, progress/loading indicator for service call, progress indicator during page navigation [PR 4](https://github.com/kumaran-is/ngx-interceptors-demo/pull/4).
+
+* Implemented retry interceptors for service retry when certain errors was thrown from service layer [PR 4](https://github.com/kumaran-is/ngx-interceptors-demo/pull/4).
+
+* Implemented timer interceptors to measure time taken to complete a request [PR 4](https://github.com/kumaran-is/ngx-interceptors-demo/pull/4).
+
+#### Bug Fixes
+
+* NA
+
 ## 0.4.0 (2020-11-22)
 
 #### Features
