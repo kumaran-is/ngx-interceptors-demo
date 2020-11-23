@@ -6,11 +6,6 @@
       <input matInput [formControl]="searchControl"  type="search"  id="searchbyCountry"  placeholder="Search By Country" >
     </mat-form-field>
   </div>
-
-  <ng-container *ngIf="isLoading">
-    <div class="loader"></div>
-  </ng-container>
-
   <app-country-table id="demo6" [countries]="countries$ | async"> </app-country-table>
 </section>
 

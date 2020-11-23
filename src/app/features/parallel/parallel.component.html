@@ -12,7 +12,7 @@
     Populate Country and Weather</button>
   </div>
 
-  <div class="cards-container" *ngIf="combinedResponse$ | async; let combinedData; else displayErrorMessage">
+  <div class="cards-container" *ngIf="combinedResponse$ | async; let combinedData">
     <div class="card">
       <app-country-card id="demo9country" [country]="combinedData[0]" > </app-country-card>
     </div>
@@ -20,9 +20,5 @@
       <app-weather-card id="demo9weather" [weather]="combinedData[1]"> </app-weather-card>
     </div>
   </div>
-
-  <ng-template #displayErrorMessage>
-    <p class="error" >No matching record found for your search criteria.</p>
-  </ng-template>
 </section>
 

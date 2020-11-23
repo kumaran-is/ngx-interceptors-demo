@@ -4,7 +4,7 @@ import { CoreConstants } from '@core/core.constants';
 import { Country } from '@models/country';
 import { CountryService } from '@services/country/country.service';
 import { Observable } from 'rxjs';
-import { debounceTime, distinctUntilChanged, filter, finalize, map, switchMap, tap } from 'rxjs/operators';
+import { debounceTime, distinctUntilChanged, filter, map, switchMap } from 'rxjs/operators';
 @Component({
   selector: 'app-search',
   templateUrl: './search.component.html',
@@ -13,7 +13,6 @@ import { debounceTime, distinctUntilChanged, filter, finalize, map, switchMap, t
 export class SearchComponent implements OnInit {
 
   public pageTitle = CoreConstants.SEARCH_PAGE_TITLE;
-  public isLoading = false;
   public searchControl: FormControl;
   public countries$: Observable<Country[]>;
 
@@ -35,13 +34,9 @@ export class SearchComponent implements OnInit {
           return filteredResult;
         }),
         debounceTime(500),
-        tap(() => this.isLoading = true),
         distinctUntilChanged(),
         switchMap((searchText: string): Observable<Country[]> => {
-          return this.countryService.getCountries(searchText)
-            .pipe(
-              finalize(() => this.isLoading = false),
-            );
+          return this.countryService.getCountries(searchText);
         })
       );
   }
