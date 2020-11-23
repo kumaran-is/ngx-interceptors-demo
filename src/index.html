@@ -6,8 +6,31 @@
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <style>
+    .app-loading {
+      position: relative;
+      display: flex;
+      height: 100%;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin-top: 200px;
+    }
+    .app-loading img {
+      height: 150px;
+      width: 150px;
+    }
+
+  </style>
 </head>
-<body>
-  <app-root></app-root>
+<body class="mat-typography">
+  <app-root>
+    <div class="app-loading">
+      <img aria-live="assertive" src="assets/img/loader.gif" aria-label="Loading..." alt="Loading...">
+      Please wait while application is loading....
+    </div>
+  </app-root>
 </body>
 </html>

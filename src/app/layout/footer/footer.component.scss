@@ -1,0 +1,38 @@
+$medium-grey: #c2c6cb;
+$color_black_haze: #f7f7f7;
+$color_shuttle_gray: #596b7d;
+
+.footer {
+  display: flex;
+  justify-content: center;
+  height: 65px;
+  border-top: 1px solid $medium-grey;
+  background-color: $color_black_haze;
+}
+
+.copyright {
+  font-size: 12px;
+  font-style: italic;
+  color: $color_shuttle_gray;
+}
+
+.version {
+  font-size: 10px;
+  font-style: italic;
+  color: $color_shuttle_gray;
+}
+
+.row {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+}

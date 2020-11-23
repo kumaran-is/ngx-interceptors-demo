@@ -1,0 +1,13 @@
+<section class="page-container" >
+  <app-page-title [pageTitle]=pageTitle></app-page-title>
+  <section class="grid-container" >
+    <ag-grid-angular
+    id="myGrid"
+      style="width: 1300px; height: 550px;"
+      class="ag-theme-alpine"
+      [rowData]="rowData$ | async"
+      [columnDefs]="columnDefs"
+    >
+    </ag-grid-angular>
+  </section>
+</section>

@@ -15,6 +15,42 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "allowJs": true,
+    "paths": {
+      "@app/*": [
+        "src/app/*"
+      ],
+      "@core/*": [
+        "src/app/core/*"
+      ],
+      "@services/*": [
+        "src/app/core/services/*"
+      ],
+      "@interfaces/*": [
+        "src/app/core/interfaces/*"
+      ],
+      "@models/*": [
+        "src/app/core/models/*"
+      ],
+      "@interceptors/*": [
+        "src/app/core/interceptors/*"
+      ],
+      "@shared/*": [
+        "src/app/shared/*"
+      ],
+      "@components/*": [
+        "src/app/shared/components/*"
+      ],
+      "@layout/*": [
+        "src/app/layout/*"
+      ],
+      "@features/*": [
+        "src/app/features/*"
+      ],
+      "@env/*": [
+        "src/environments/*"
+      ]
+    }
   }
 }
