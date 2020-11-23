@@ -1,0 +1,22 @@
+<section class="cardContainer" >
+  <span class="cardTitleText">{{ country?.name }}</span>
+    <div class="flagIconContainer" >
+     <img [src]="country?.flag" height="200" width="300" >
+    </div>
+    <div>
+        <span class="label-black">Captial :</span>
+        <span class="dataText-black">{{ country?.capital }}</span>
+    </div>
+    <div>
+        <span class="label-black">Region :</span>
+        <span class="dataText-black">{{ country?.region }}</span>
+    </div>
+    <div>
+      <span class="label-black">Population :</span>
+      <span class="dataText-black">{{ country?.population | number }}</span>
+  </div>
+  <div>
+      <span class="label-black">Currency :</span>
+      <span class="dataText-black">{{ country?.currency }}</span>
+  </div>
+</section>

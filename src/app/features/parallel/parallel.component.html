@@ -1,4 +1,22 @@
 <section class="page-container" >
   <app-page-title [pageTitle]=pageTitle></app-page-title>
+  <div class ="searchContainer" >
+    <input type="text" #searchCountryAndCapitalCityWeather id="searchCountryAndCapitalCityWeather"
+    placeholder="Capital City Name" >
+    <span class="space"></span>
+    <input type="button"
+    (click)="populateCountryDetailAndCapitalCityWeather(searchCountryAndCapitalCityWeather.value)"
+     value ="Populate Country and Weather" >
+  </div>
+
+  <div *ngIf="combinedResponse$ | async; let combinedData; else displayErrorMessage" >
+    <app-country-card id="demo9country" [country]="combinedData[0]" > </app-country-card>
+    <span class="space"></span>
+    <app-weather-card id="demo9weather" [weather]="combinedData[1]"> </app-weather-card>
+  </div>
+
+  <ng-template #displayErrorMessage>
+    <p class="error" >No matching record found for your search criteria.</p>
+  </ng-template>
 </section>
 

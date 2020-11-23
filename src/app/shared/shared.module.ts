@@ -4,10 +4,16 @@ import { CommonModule } from '@angular/common';
 import { AgGridModule } from 'ag-grid-angular';
 import { PageTitleComponent } from '@components/page-title/page-title.component';
 import { MatButtonModule } from '@angular/material/button';
+import { CountryCardComponent } from '@components/country-card/country-card.component';
+import { CountryTableComponent } from '@components/country-table/country-table.component';
+import { WeatherCardComponent } from '@components/weather-card/weather-card.component';
 
 @NgModule({
   declarations: [
-    PageTitleComponent
+    PageTitleComponent,
+    CountryCardComponent,
+    CountryTableComponent,
+    WeatherCardComponent
   ],
   imports: [
     CommonModule,
@@ -17,9 +23,13 @@ import { MatButtonModule } from '@angular/material/button';
   ],
   exports: [
     CommonModule,
+    ReactiveFormsModule,
     MatButtonModule,
     AgGridModule,
-    PageTitleComponent
+    PageTitleComponent,
+    CountryCardComponent,
+    CountryTableComponent,
+    WeatherCardComponent
   ]
 })
 export class SharedModule { }
