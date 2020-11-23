@@ -21,8 +21,8 @@ export class RequestTimerInterceptor implements HttpInterceptor {
     let responseTime = null;
     return next.handle(request)
       .pipe(
-        tap((event) => {
-          if (event instanceof HttpResponse) {
+        tap((event: HttpEvent<any>) => {
+          if (event instanceof HttpResponse && event.ok) {
             endTime = (new Date()).getTime();
             responseTime = `Request ${event?.url} succeded in ${endTime - startTime} milli seconds`;
           }

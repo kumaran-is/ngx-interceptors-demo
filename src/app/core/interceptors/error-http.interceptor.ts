@@ -31,14 +31,8 @@ export class ErrorHttpInterceptor implements HttpInterceptor {
     return next.handle(request)
       .pipe(
         delay(2250),
-        tap((evt) => {
-          if (evt instanceof HttpResponse && evt.body && evt.body.success) {
-            this.removeRequest(request);
-          }
-        }),
         catchError((error: HttpErrorResponse | any): Observable<any> => {
           let httpError = null;
-          this.removeRequest(request);
           if (!navigator.onLine) {
             httpError = { message: 'No Internet Connection. You are offline!' };
           } else {
