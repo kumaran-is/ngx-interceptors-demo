@@ -12,10 +12,13 @@
     Populate Country and Weather</button>
   </div>
 
-  <div *ngIf="combinedResponse$ | async; let combinedData; else displayErrorMessage" >
-    <app-country-card id="demo9country" [country]="combinedData[0]" > </app-country-card>
-    <span class="space"></span>
-    <app-weather-card id="demo9weather" [weather]="combinedData[1]"> </app-weather-card>
+  <div class="cards-container" *ngIf="combinedResponse$ | async; let combinedData; else displayErrorMessage">
+    <div class="card">
+      <app-country-card id="demo9country" [country]="combinedData[0]" > </app-country-card>
+    </div>
+    <div class="card">
+      <app-weather-card id="demo9weather" [weather]="combinedData[1]"> </app-weather-card>
+    </div>
   </div>
 
   <ng-template #displayErrorMessage>

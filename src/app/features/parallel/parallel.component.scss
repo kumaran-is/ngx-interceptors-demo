@@ -12,6 +12,14 @@
   padding-left: 30px;
 }
 
+.cards-container {
+  display: flex;
+}
+
+.card {
+  flex: 1;
+}
+
 span.space {
   padding: 1rem;
 }
