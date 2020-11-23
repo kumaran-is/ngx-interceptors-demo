@@ -18,22 +18,22 @@ export class RequestTimerInterceptor implements HttpInterceptor {
   intercept(request: HttpRequest<any>, next: HttpHandler): Observable<HttpEvent<any>> {
     let startTime = (new Date()).getTime();
     let endTime = null;
-    let responseTime = null;
+    let elapsedTime = null;
     return next.handle(request)
       .pipe(
         tap((event: HttpEvent<any>) => {
           if (event instanceof HttpResponse && event.ok) {
             endTime = (new Date()).getTime();
-            responseTime = `Request ${event?.url} succeded in ${endTime - startTime} milli seconds`;
+            elapsedTime = `Request ${request.method} ${request.urlWithParams} succeded in ${endTime - startTime} milli seconds`;
           }
         }),
         catchError((error: HttpErrorResponse | any): Observable<any> => {
           endTime = (new Date()).getTime();
-          responseTime = `Request ${error?.url} failed in in ${endTime - startTime} milli seconds`;
+          elapsedTime = `Request ${request.method} ${request.urlWithParams} failed in ${endTime - startTime} milli seconds`;
           return throwError(error);
         }),
         finalize(() => {
-          console.log(responseTime);
+          console.log(elapsedTime);
         })
       );
   }
