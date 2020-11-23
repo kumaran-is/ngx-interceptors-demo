@@ -8,6 +8,7 @@ import { MatCardModule } from '@angular/material/card';
 import { MatDialogModule } from "@angular/material/dialog";
 import { MatInputModule } from '@angular/material/input';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { MatTableModule } from '@angular/material/table';
 import { CountryCardComponent } from '@components/country-card/country-card.component';
 import { CountryTableComponent } from '@components/country-table/country-table.component';
@@ -34,6 +35,7 @@ import { ErrorModalService } from '@components/error-modal/error-modal.service';
     MatDialogModule,
     MatInputModule,
     MatProgressSpinnerModule,
+    MatSnackBarModule,
     MatTableModule
   ],
   exports: [
@@ -44,6 +46,7 @@ import { ErrorModalService } from '@components/error-modal/error-modal.service';
     MatDialogModule,
     MatInputModule,
     MatProgressSpinnerModule,
+    MatSnackBarModule,
     MatTableModule,
     AgGridModule,
     PageTitleComponent,

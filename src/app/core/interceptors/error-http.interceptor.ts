@@ -85,7 +85,7 @@ export class ErrorHttpInterceptor implements HttpInterceptor {
     }
     if(this.requests.length === 0 && this.loadingService.isLoaderOpen)
     {
-      this.loadingService.hideLoader()
+      this.loadingService.hideLoader();
     }
   }
 }

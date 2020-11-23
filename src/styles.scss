@@ -39,3 +39,44 @@ a:hover {
   color: #125699;
 }
 
+// customize Angular material snackbar style
+.green-snackbar {
+	background: #28a745;
+	color: white;
+	button {
+		background-color: #28a745;
+		color: white;
+		border: none;
+	}
+}
+
+.red-snackbar {
+	background: #dc3545;
+	color: white;
+	button {
+		background-color: #dc3545;
+		color: white !important;
+		border: none;
+	}
+}
+
+.orange-snackbar {
+	background: #fd7e14;
+	color: white;
+	button {
+		background-color: #fd7e14;
+		color: white !important;
+		border: none;
+	}
+}
+
+.cyan-snackbar {
+	background: #17a2b8;
+	color: white;
+	button {
+		background-color: #17a2b8;
+		color: white !important;
+		border: none;
+	}
+}
+
