@@ -25,16 +25,26 @@ export class AuthHttpInterceptor implements HttpInterceptor {
         catchError((error: HttpErrorResponse | any): Observable<any> => {
           let httpError = null;
           if (error instanceof HttpErrorResponse) {
+            console.log('>>>>>>>>>>>>>error 1111>>>>>>>>>>>>>>', error);
             if (errors.indexOf(error.status) >= 0) {
              // Throw error dialog or call authService to handle error and navigate to login screen
-             httpError = { statusCode: error.status || 'Undefined status code', message: error.message  || 'Undefined server error'};
+             httpError = {
+               statusCode: error.status || 'Undefined status code',
+               message: error.message || 'Undefined server error',
+               description: error.error.description || error.error.message || 'Undefined error description'
+             };
             }
           } else {
             if (error.networkError && error.networkError.statusCode === unauthorizedError) {
               // Throw error dialog or call authService to handle error and navigate to login screen
-              httpError = { statusCode: error.networkError.statusCode || 'Undefined status code', message: error.networkError.message  || 'Undefined server error'};
+              httpError = {
+                statusCode: error.networkError.statusCode || 'Undefined status code',
+                message: error.networkError.message || 'Undefined server error',
+                description: error.error.description || error.error.message || 'Undefined error description'
+              };
             }
           }
+          console.log('>>>>>>>>>>>>>httpError>>>>>>>>>>>>>>', httpError);
           if(httpError) {
             this.errorModalService.showErrorModal(httpError);
           }

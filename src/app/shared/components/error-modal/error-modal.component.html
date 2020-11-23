@@ -6,7 +6,10 @@
   <ng-template #nostatus>
     <p><b>Something went wrong!</b></p>
   </ng-template>
-	<p class="error-message">{{errorWrapper?.message}}</p>
+  <div class="error-message">
+    <p>{{errorWrapper?.description}}</p>
+    <p>{{errorWrapper?.message}}</p>
+  </div>
 </div>
 <div mat-dialog-actions>
 	<button mat-raised-button mat-dialog-close color="primary">
