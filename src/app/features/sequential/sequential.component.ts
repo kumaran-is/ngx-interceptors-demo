@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { HttpErrorResponse } from '@angular/common/http';
 import { CoreConstants } from '@core/core.constants';
 import { Country } from '@models/country';
@@ -13,7 +13,7 @@ import { catchError, mergeMap } from 'rxjs/operators';
   templateUrl: './sequential.component.html',
   styleUrls: ['./sequential.component.scss']
 })
-export class SequentialComponent implements OnInit {
+export class SequentialComponent {
 
   public pageTitle = CoreConstants.SEQUENTIAL_PAGE_TITLE;
   public weather: Weather;

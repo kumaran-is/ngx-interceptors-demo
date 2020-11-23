@@ -1,3 +1,13 @@
+## 0.3.0 (2020-11-22)
+
+#### Features
+
+* Implement search page, sequential page, parallel page, country service, weather service and its dump components [PR 2](https://github.com/kumaran-is/ngx-interceptors-demo/pull/2).
+
+#### Bug Fixes
+
+* NA
+
 ## 0.2.0 (2020-11-21)
 
 #### Features
