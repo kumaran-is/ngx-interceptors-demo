@@ -17,16 +17,14 @@ export class ProgressHttpInterceptor implements HttpInterceptor {
   constructor(private loadingService: LoadingService) {}
 
   intercept(request: HttpRequest<any>, next: HttpHandler): Observable<HttpEvent<any>> {
-    console.log('**************calling ProgressHttpInterceptor **************');
+
     this.requests.push(request);
-    console.log('No of requests--->' + this.requests.length);
     this.loadingService.showLoader();
 
     return next.handle(request)
       .pipe(
         delay(2250),
         finalize(() => {
-          console.log('**************Finalize ProgressHttpInterceptor **************');
           this.removeRequest(request);
         })
       );

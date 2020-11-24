@@ -33,7 +33,7 @@ export class RequestTimerInterceptor implements HttpInterceptor {
           return throwError(error);
         }),
         finalize(() => {
-          console.log('!!!!!!!!!!!!!!!!!!!!!!ELASPED TIME>>>> ', elapsedTime);
+          console.log(elapsedTime);
         })
       );
   }

@@ -10,8 +10,6 @@ import { ErrorWrapper } from '@interfaces/error-wrapper.interface';
 export class ErrorModalComponent {
 
   constructor(@Inject(MAT_DIALOG_DATA)
-  public errorWrapper: ErrorWrapper) {
-    console.log('>>>>> ErrorModalComponent constructor>', errorWrapper);
-  }
+  public errorWrapper: ErrorWrapper) {}
 
 }
