@@ -19,8 +19,12 @@ Library | Version | Notes
 :-------|:--------:|-------
 [Node](https://nodejs.org/) | 12.13.x | Recommended NodeJS version
 [NPM](https://nodejs.org/) | 6.12.x | Recommended NPM version
-[Angular](https://angularjs.org/) | 11.x.x. | JavaScript-based open-source front-end SPA framework
-[Angular Material](https://material.angular.io/) | 11.x.x. | Material Design components for Angular
+[Angular](https://angularjs.org/) | 11.0.x | JavaScript-based open-source front-end SPA framework
+[Angular CLI](https://github.com/angular/angular-cli) | 11.0.x | Development tools and libraries specialized for Angular
+[Angular Material](https://material.angular.io/) | 11.x.x | Material Design components for Angular
+[RxJS](https://rxjs-dev.firebaseapp.com/) | 6.6.x | A reactive programming library for JavaScript.
+[ngx-toastr](https://github.com/scttcper/ngx-toastr) | 13.1.0. | Angular Toast Component
+
 ## Quick Start
 
 1. Clone repository and enter it

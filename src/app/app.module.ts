@@ -7,6 +7,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CoreModule } from '@core/core.module';
 import { LayoutModule } from '@layout/layout.module';
 import { HomeModule } from '@features/home/home.module';
+import { SharedModule } from '@shared/shared.module';
 
 @NgModule({
   declarations: [
@@ -14,6 +15,7 @@ import { HomeModule } from '@features/home/home.module';
   ],
   imports: [
     BrowserModule,
+    SharedModule.forRoot(),
     CoreModule,
     LayoutModule,
     HomeModule,

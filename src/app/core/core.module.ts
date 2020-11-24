@@ -1,7 +1,7 @@
 import { NgModule, Optional, SkipSelf } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { HttpClientModule } from '@angular/common/http';
-
+import {interceptorProviders} from '@interceptors/interceptors';
 
 @NgModule({
   declarations: [],
@@ -9,7 +9,8 @@ import { HttpClientModule } from '@angular/common/http';
     CommonModule,
     HttpClientModule
   ],
-  exports: [HttpClientModule]
+  exports: [HttpClientModule],
+  providers: [interceptorProviders]
 })
 export class CoreModule {
   /* make sure CoreModule is imported only by one NgModule i.e the AppModule

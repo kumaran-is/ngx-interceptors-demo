@@ -11,4 +11,6 @@ export class CoreConstants {
   public static readonly SEQUENTIAL_PAGE_TITLE = 'Sequential';
   public static readonly APP_TITLE = 'ngx-interceptors-demo';
 
+  public static readonly ALERT_DURATION = 2000;
+
 }
