@@ -4,9 +4,11 @@
 
 * Implemented interceptors to centralize error handling, auth error handling, progress/loading indicator for service call, progress indicator during page navigation [PR 4](https://github.com/kumaran-is/ngx-interceptors-demo/pull/4).
 
-* Implemented retry interceptors for service retry when certain errors was thrown from service layer [PR 4](https://github.com/kumaran-is/ngx-interceptors-demo/pull/4).
+* Implemented retry service to retry when service fails [PR 4](https://github.com/kumaran-is/ngx-interceptors-demo/pull/4).
 
 * Implemented timer interceptors to measure time taken to complete a request [PR 4](https://github.com/kumaran-is/ngx-interceptors-demo/pull/4).
+
+* Implemented alert similar to toaster using Angular material snackbar [PR 4](https://github.com/kumaran-is/ngx-interceptors-demo/pull/4).
 
 #### Bug Fixes
 

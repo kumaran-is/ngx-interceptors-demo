@@ -6,6 +6,6 @@
       <input matInput [formControl]="searchControl"  type="search"  id="searchbyCountry"  placeholder="Search By Country" >
     </mat-form-field>
   </div>
-  <app-country-table id="demo6" [countries]="countries$ | async"> </app-country-table>
+  <app-country-table [countries]="countries$ | async"> </app-country-table>
 </section>
 

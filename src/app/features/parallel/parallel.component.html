@@ -14,10 +14,10 @@
 
   <div class="cards-container" *ngIf="combinedResponse$ | async; let combinedData">
     <div class="card">
-      <app-country-card id="demo9country" [country]="combinedData[0]" > </app-country-card>
+      <app-country-card [country]="combinedData[0]" > </app-country-card>
     </div>
     <div class="card">
-      <app-weather-card id="demo9weather" [weather]="combinedData[1]"> </app-weather-card>
+      <app-weather-card [weather]="combinedData[1]"> </app-weather-card>
     </div>
   </div>
 </section>
