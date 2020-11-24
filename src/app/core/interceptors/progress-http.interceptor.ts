@@ -6,7 +6,7 @@ import {
   HttpInterceptor
 } from '@angular/common/http';
 import { Observable } from 'rxjs';
-import { delay, finalize } from 'rxjs/operators';
+import { finalize } from 'rxjs/operators';
 import { LoadingService } from '@components/loading/loading.service';
 
 @Injectable()
@@ -23,7 +23,6 @@ export class ProgressHttpInterceptor implements HttpInterceptor {
 
     return next.handle(request)
       .pipe(
-        delay(2250),
         finalize(() => {
           this.removeRequest(request);
         })

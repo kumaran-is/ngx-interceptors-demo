@@ -39,8 +39,8 @@ export class CountryService {
 
   public getCountries(searchKey: string):  Observable<any> {
 
-    return this.http.get<Country[]>(`https://httpstat.us/401?sleep=5000`)
-   // return this.http.get<Country[]>(`https://restcountries.eu/rest/v2/name/${searchKey}`)
+    // return this.http.get<Country[]>(`https://httpstat.us/401?sleep=5000`)
+    return this.http.get<Country[]>(`https://restcountries.eu/rest/v2/name/${searchKey}`)
     .pipe(
       map((response: any) => {
         const countries: Country[] = [];
