@@ -7,6 +7,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
 import { MatDialogModule } from "@angular/material/dialog";
 import { MatInputModule } from '@angular/material/input';
+import { MatProgressBarModule } from '@angular/material/progress-bar';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { MatTableModule } from '@angular/material/table';
@@ -17,6 +18,8 @@ import { ErrorModalComponent } from '@components/error-modal/error-modal.compone
 import { LoadingComponent } from '@components/loading/loading.component';
 import { LoadingService } from '@components/loading/loading.service';
 import { ErrorModalService } from '@components/error-modal/error-modal.service';
+import { NavLoaderComponent } from './components/nav-loader/nav-loader.component';
+
 @NgModule({
   declarations: [
     PageTitleComponent,
@@ -24,7 +27,8 @@ import { ErrorModalService } from '@components/error-modal/error-modal.service';
     CountryTableComponent,
     WeatherCardComponent,
     ErrorModalComponent,
-    LoadingComponent
+    LoadingComponent,
+    NavLoaderComponent
   ],
   imports: [
     CommonModule,
@@ -34,6 +38,7 @@ import { ErrorModalService } from '@components/error-modal/error-modal.service';
     MatCardModule,
     MatDialogModule,
     MatInputModule,
+    MatProgressBarModule,
     MatProgressSpinnerModule,
     MatSnackBarModule,
     MatTableModule
@@ -45,6 +50,7 @@ import { ErrorModalService } from '@components/error-modal/error-modal.service';
     MatCardModule,
     MatDialogModule,
     MatInputModule,
+    MatProgressBarModule,
     MatProgressSpinnerModule,
     MatSnackBarModule,
     MatTableModule,
@@ -54,7 +60,8 @@ import { ErrorModalService } from '@components/error-modal/error-modal.service';
     CountryTableComponent,
     WeatherCardComponent,
     ErrorModalComponent,
-    LoadingComponent
+    LoadingComponent,
+    NavLoaderComponent
   ]
 })
 export class SharedModule {
