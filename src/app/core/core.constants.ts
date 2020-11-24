@@ -13,4 +13,9 @@ export class CoreConstants {
 
   public static readonly ALERT_DURATION = 2000;
 
+  // Retry configs
+  public static readonly DEFAULT_MAX_RETRY = 3;
+  public static readonly DEFAULT_BACKOFF = 500;
+  public static readonly DEFAULT_DELAY = 500;
+
 }

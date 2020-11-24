@@ -11,7 +11,7 @@ export class LoadingService {
   constructor (private dialog: MatDialog) { }
 
   showLoader(): void {
-    console.log('showLoader >>>>> ', this.opened)
+
     if (!this.opened) {
       this.opened = true;
       this.dialogRef = this.dialog.open(LoadingComponent, {
@@ -30,7 +30,6 @@ export class LoadingService {
   }
 
   hideLoader() {
-    console.log('hideLoader >>>>> ', this.opened)
     this.dialogRef.close();
   }
 

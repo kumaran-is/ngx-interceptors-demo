@@ -1,0 +1,4 @@
+export enum AUTH_ERROR_STATUS {
+  UNAUTHORIZED = 401,
+  FORBIDDEN = 403
+}
