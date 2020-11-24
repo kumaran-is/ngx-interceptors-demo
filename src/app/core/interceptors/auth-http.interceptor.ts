@@ -12,20 +12,22 @@ import { ErrorModalService } from '@components/error-modal/error-modal.service';
 @Injectable()
 export class AuthHttpInterceptor implements HttpInterceptor {
 
+
   constructor(private errorModalService: ErrorModalService) {}
 
   intercept(request: HttpRequest<any>, next: HttpHandler): Observable<HttpEvent<any>> {
 
-    const unauthorizedError = 401;
-    const forbiddenError = 403;
-    const errors = [unauthorizedError, forbiddenError];
+    enum AUTH_ERROR_STATUS {
+      UNAUTHORIZED = 401,
+      FORBIDDEN = 403
+    }
 
     return next.handle(request)
       .pipe(
         catchError((error: HttpErrorResponse | any): Observable<any> => {
           let httpError = null;
           if (error instanceof HttpErrorResponse) {
-            if (errors.indexOf(error.status) >= 0) {
+            if (error.status in AUTH_ERROR_STATUS) {
              // Throw error dialog or call authService to handle error and navigate to login screen
              httpError = {
                statusCode: error.status || 'Undefined status code',
@@ -34,7 +36,7 @@ export class AuthHttpInterceptor implements HttpInterceptor {
              };
             }
           } else {
-            if (error.networkError && error.networkError.statusCode === unauthorizedError) {
+            if (error.networkError && error.networkError.statusCode === AUTH_ERROR_STATUS.UNAUTHORIZED) {
               // Throw error dialog or call authService to handle error and navigate to login screen
               httpError = {
                 statusCode: error.networkError.statusCode || 'Undefined status code',
