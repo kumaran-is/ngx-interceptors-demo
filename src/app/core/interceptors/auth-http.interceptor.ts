@@ -8,19 +8,14 @@ import {
 import { Observable, throwError} from 'rxjs';
 import { catchError } from 'rxjs/operators';
 import { ErrorModalService } from '@components/error-modal/error-modal.service';
+import { AUTH_ERROR_STATUS }  from '@models/auth-error-status';
 
 @Injectable()
 export class AuthHttpInterceptor implements HttpInterceptor {
 
-
   constructor(private errorModalService: ErrorModalService) {}
 
   intercept(request: HttpRequest<any>, next: HttpHandler): Observable<HttpEvent<any>> {
-
-    enum AUTH_ERROR_STATUS {
-      UNAUTHORIZED = 401,
-      FORBIDDEN = 403
-    }
 
     return next.handle(request)
       .pipe(
