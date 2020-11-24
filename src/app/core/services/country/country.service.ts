@@ -3,6 +3,7 @@ import { Injectable } from '@angular/core';
 import { Country } from '@models/country';
 import { EMPTY, Observable, of, throwError } from 'rxjs';
 import { catchError, finalize, map, tap } from 'rxjs/operators';
+import { RetryService } from '@services/retry/retry.service';
 
 @Injectable({
   providedIn: 'root'
@@ -10,7 +11,8 @@ import { catchError, finalize, map, tap } from 'rxjs/operators';
 export class CountryService {
 
   constructor(
-    private http: HttpClient
+    private http: HttpClient,
+    private retryService: RetryService
   ) { }
 
   public getCountryDetail(countryName: String):  Observable<any> {
@@ -39,8 +41,8 @@ export class CountryService {
 
   public getCountries(searchKey: string):  Observable<any> {
 
-   // return this.http.get<Country[]>(`https://httpstat.us/404?sleep=5000`)
-    return this.http.get<Country[]>(`https://restcountries.eu/rest/v2/name/${searchKey}`)
+    return this.http.get<Country[]>(`https://httpstat.us/404?sleep=5000`)
+   // return this.http.get<Country[]>(`https://restcountries.eu/rest/v2/name/${searchKey}`)
     .pipe(
       map((response: any) => {
         const countries: Country[] = [];
@@ -56,6 +58,7 @@ export class CountryService {
         });
         return countries;
       }),
+      this.retryService.retryWithBackOff(),
       catchError(this.handleErrorAndReturnEmptyObservable.bind(this)),
       finalize(() => {
         console.log('Clean up your resource here ');

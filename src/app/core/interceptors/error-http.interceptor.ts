@@ -62,7 +62,6 @@ export class ErrorHttpInterceptor implements HttpInterceptor {
           }
           console.log('<<<<<process Non Auth errors 333 >>>>>', httpError);
           this.errorModalService.showErrorModal(httpError);
-
           return throwError(error);
         }),
         finalize(() => {
