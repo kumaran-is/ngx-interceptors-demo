@@ -1,6 +1,6 @@
 @import '~src/styles/themes/themes';
 
-$accent: map-get($app-theme, primary);
+$accent: map-get($app-netflix, primary);
 
 .app-loading {
   position: relative;
