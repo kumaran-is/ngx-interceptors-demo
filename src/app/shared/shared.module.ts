@@ -11,6 +11,7 @@ import { MatProgressBarModule } from '@angular/material/progress-bar';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { MatTableModule } from '@angular/material/table';
+import { MatToolbarModule } from '@angular/material/toolbar';
 import { CountryCardComponent } from '@components/country-card/country-card.component';
 import { CountryTableComponent } from '@components/country-table/country-table.component';
 import { WeatherCardComponent } from '@components/weather-card/weather-card.component';
@@ -41,7 +42,8 @@ import { NavLoaderComponent } from './components/nav-loader/nav-loader.component
     MatProgressBarModule,
     MatProgressSpinnerModule,
     MatSnackBarModule,
-    MatTableModule
+    MatTableModule,
+    MatToolbarModule
   ],
   exports: [
     CommonModule,
@@ -54,6 +56,7 @@ import { NavLoaderComponent } from './components/nav-loader/nav-loader.component
     MatProgressSpinnerModule,
     MatSnackBarModule,
     MatTableModule,
+    MatToolbarModule,
     AgGridModule,
     PageTitleComponent,
     CountryCardComponent,

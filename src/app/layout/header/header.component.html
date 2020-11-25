@@ -1,21 +1,25 @@
-<div class="toolbar" role="banner">
-  <img
-    width="40"
-    alt="Apple Logo"
-    src="assets/images/apple.svg"
-  />
-  <div class="title"><h2>Angular Interceptors Demo</h2></div>
-  <div class="spacer"></div>
-  <button [routerLink]="['/home']" mat-flat-button class="menu-btn" color="primary">Home</button>
-  <button [routerLink]="['/search']" mat-flat-button class="menu-btn" color="primary">Search</button>
-  <button [routerLink]="['/sequential']" mat-flat-button class="menu-btn" color="primary">Sequential</button>
-  <button [routerLink]="['/parallel']" mat-flat-button class="menu-btn" color="primary">Parallel</button>
-  <a aria-label="application source code in github" target="_blank"
-    rel="noopener" href="https://github.com/kumaran-is/ngx-interceptors-demo" title="Github">
-    <img src="assets/images/github-logo.svg">
-  </a>
-  <a aria-label="follow my twitter account" class="twitter-logo"target="_blank"
-    rel="noopener" href="https://twitter.com/kumaranis" title="Twitter">
-    <img src="assets/images/twitter-logo.svg">
-  </a>
+<div class="toolbar">
+  <mat-toolbar color="primary" role="navigation">
+    <mat-toolbar-row>
+      <img
+        width="40"
+        alt="Apple Logo"
+        src="assets/images/apple.svg"
+      />
+      <div class="title"><h2>Angular Interceptors Demo</h2></div>
+      <div class="spacer"></div>
+      <button [routerLink]="['/home']" mat-flat-button class="menu-btn" color="primary">Home</button>
+      <button [routerLink]="['/search']" mat-flat-button class="menu-btn" color="primary">Search</button>
+      <button [routerLink]="['/sequential']" mat-flat-button class="menu-btn" color="primary">Sequential</button>
+      <button [routerLink]="['/parallel']" mat-flat-button class="menu-btn" color="primary">Parallel</button>
+      <a aria-label="application source code in github" target="_blank"
+        rel="noopener" href="https://github.com/kumaran-is/ngx-interceptors-demo" title="Github">
+        <img src="assets/images/github-logo.svg">
+      </a>
+      <a aria-label="follow my twitter account" class="twitter-logo"target="_blank"
+        rel="noopener" href="https://twitter.com/kumaranis" title="Twitter">
+        <img src="assets/images/twitter-logo.svg">
+      </a>
+    </mat-toolbar-row>
+  </mat-toolbar>
 </div>
