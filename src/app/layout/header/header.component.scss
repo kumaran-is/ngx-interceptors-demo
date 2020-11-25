@@ -1,3 +1,5 @@
+@import '~src/styles/themes/theme-mixins';
+@import '~src/styles/themes/themes';
 .toolbar {
   position: absolute;
   top: 0;
@@ -6,7 +8,7 @@
   height: 60px;
   display: flex;
   align-items: center;
-  background-color: #3f51b5;
+  background-color: primary;
   color: white;
   font-weight: 500;
 }
