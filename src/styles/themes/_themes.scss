@@ -19,12 +19,13 @@
 // Default theme netflix reverse theme(red primary/black as accent)
 @import 'default-theme.scss'; */
 
-// nextflix theme
-@import 'netflix-theme.scss';
-
 /*
+// nextflix theme
+@import 'netflix-theme.scss'; */
+
+
 //Expedia.com site look alike theme
-@import 'expedia-theme.scss'; */
+@import 'expedia-theme.scss';
 
 /*
 // default theme - Netflix reverse theme
@@ -37,16 +38,17 @@
 */
 
 // Netflix theme
+/*
 .netflix-theme {
   @include angular-material-theme($app-netflix);
   @include global-custom-theme($app-netflix);
 }
+*/
 
 
-/*
 // Expedia.com site look alike theme
 .expedia-theme {
   @include angular-material-theme($app-expedia);
   @include global-custom-theme($app-expedia);
 }
-*/
+
