@@ -4,6 +4,7 @@
 // -----------------------------------------------------------------------------
 // This file contains custom theme - Expedia look alike theme
 // -----------------------------------------------------------------------------
+@import '~@angular/material/theming';
 @import 'custom-palette.scss';
 
 $app-default-primary: mat-palette($mat-custom-crimson-red, 500, 600, 700);
