@@ -1,3 +1,12 @@
+## 0.7.0 (2020-11-25)
+
+#### Features
+
+* Added proxy setup to talk to backend service.[PR 6](https://github.com/kumaran-is/ngx-interceptors-demo/pull/6).
+#### Bug Fixes
+
+* NA
+
 ## 0.6.0 (2020-11-23)
 
 #### Features
@@ -6,6 +15,7 @@
 #### Bug Fixes
 
 * NA
+
 ## 0.5.0 (2020-11-23)
 
 #### Features
