@@ -5,7 +5,7 @@
 export const environment = {
   production: false,
   // version is automatically updated during build from package.json
-  version: '0.6.0',
+  version: '0.7.0',
   envName: 'Development',
 };
 
