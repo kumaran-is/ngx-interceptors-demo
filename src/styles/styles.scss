@@ -1,7 +1,4 @@
 /* You can add global styles to this file, and also import other style files */
-// ag-Grid styles
-@import "../node_modules/ag-grid-community/dist/styles/ag-grid.css";
-@import "../node_modules/ag-grid-community/dist/styles/ag-theme-alpine.css";
 body {
   font-family: Roboto, 'Helvetica Neue', sans-serif;
   font-size: 14px;
@@ -9,7 +6,6 @@ body {
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-
 }
 
 h1,
