@@ -13,9 +13,8 @@
 //Import mixins for theme
 @import 'theme-mixins.scss';
 
-/* import our custom themes */
-// Default theme netflix reverse theme(red primary/black as accent)
-@import 'default-theme.scss';
+/* import our custom themes  variables*/
+@import 'theme-variables.scss';
 
 // default theme - Netflix reverse theme
 .default-theme {

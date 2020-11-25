@@ -1,6 +1,23 @@
 // -----------------------------------------------------------------------------
 // This file contains all application-wide theme variables.
 // -----------------------------------------------------------------------------
+// -----------------------------------------------------------------------------
+// This file contains custom theme - Expedia look alike theme
+// -----------------------------------------------------------------------------
+@import 'custom-palette.scss';
+
+$app-default-primary: mat-palette($mat-custom-crimson-red, 500, 600, 700);
+$app-default-accent:  mat-palette($mat-custom-raisin-black, 500, 600, 700);
+// The warn palette is optional (defaults to red).
+$app-default-warn: mat-palette($mat-red);
+// Create the theme(dark or light) object (a Sass map containing all of the palettes).
+// dark or light variants theme function  @function mat-dark-theme($primary, $accent, $warn: mat-palette($mat-red))
+$app-default: mat-light-theme($app-default-primary, $app-default-accent, $app-default-warn);
+
+$primary: mat-color($app-default-primary);
+$accent: mat-color($app-default-accent);
+$warn: mat-color($app-default-warn);
+
 
 $white: #fff;
 $black: #000;
