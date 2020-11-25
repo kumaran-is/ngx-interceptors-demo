@@ -1,0 +1,24 @@
+// -----------------------------------------------------------------------------
+// This file contains default custom theme.
+// -----------------------------------------------------------------------------
+
+/*
+Primary - Main colors most widely used across all screens and components.
+Accent - Also known as the secondary color. Used for floating action buttons and interactive elements.
+Warn - Colors to convey error state.
+Foreground - Used for text and icons.
+Background - Colors used for element backgrounds. */
+
+/* Define the palettes for your theme using the Material Design palettes available in palette.scss
+ Available color palettes: https://material.io/design/color/
+ For each palette, you can optionally specify a default, lighter, and darker hue
+ using the function mat-palette($base-palette, $default: 500, $lighter: 100, $darker: 700)
+*/
+
+$app-theme-primary: mat-palette($mat-blue, 700, 400, 700);
+$app-theme-accent:  mat-palette($mat-orange, A700, A400, A700);
+// The warn palette is optional (defaults to red).
+$app-theme-warn: mat-palette($mat-red);
+// Create the theme(dark or light) object (a Sass map containing all of the palettes).
+// dark or light variants theme function  @function mat-dark-theme($primary, $accent, $warn: mat-palette($mat-red))
+$app-theme: mat-light-theme($app-theme-primary, $app-theme-accent, $app-theme-warn);

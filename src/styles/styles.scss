@@ -76,3 +76,21 @@ a:hover {
 	}
 }
 
+/* You can add global styles to this file, and also import other style files */
+// -------------------------------------------------------------------------------------------------------------------
+// Entry point of global application style. You can add global styles to this file, and also import other style files
+// Component-specific style should not go here and be included directly as part of the components.
+// -------------------------------------------------------------------------------------------------------------------
+@charset 'UTF-8';
+
+// 1. Configurations and helpers
+@import './helpers/variables', './helpers/functions', './helpers/mixins';
+
+// 3. Base Stuff
+@import './base/base', './base/fonts', './base/reset', './base/typography';
+
+// 4. Components
+@import './components/app-loading', './components/auth', './components/button', './components/form', './components/parallax';
+
+// 5. Themes
+@import './themes/theme-variables', './themes/theme-mixins',  './themes/themes';

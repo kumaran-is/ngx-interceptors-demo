@@ -1,0 +1,7 @@
+// -----------------------------------------------------------------------------
+// This file contains custom theme3.
+// -----------------------------------------------------------------------------
+$app-theme3-primary: mat-palette($mat-yellow, 700, 100, 700);
+$app-theme3-accent:  mat-palette($mat-deep-purple, A700, A100, A700);
+$app-theme3-warn: mat-palette($mat-red);
+$app-theme3: mat-light-theme($app-theme3-primary, $app-theme3-accent, $app-theme3-warn);

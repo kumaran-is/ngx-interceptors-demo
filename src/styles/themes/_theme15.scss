@@ -1,0 +1,9 @@
+// -----------------------------------------------------------------------------
+// This file contains custom theme15
+// -----------------------------------------------------------------------------
+@import 'custom-palette.scss';
+
+$app-theme15-primary: mat-palette($mat-custom-buttercup, 700, 600, 700);
+$app-theme15-accent:  mat-palette($mat-custom-orange-tiger, 500, 600, 700);
+$app-theme15-warn: mat-palette($mat-red);
+$app-theme15: mat-light-theme($app-theme15-primary, $app-theme15-accent, $app-theme15-warn);

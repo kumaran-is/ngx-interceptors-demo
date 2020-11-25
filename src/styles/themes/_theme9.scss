@@ -1,0 +1,10 @@
+// -----------------------------------------------------------------------------
+// This file contains custom theme9 that uses custom palette colors
+// -----------------------------------------------------------------------------
+
+@import 'custom-palette.scss';
+
+$app-theme9-primary: mat-palette($mat-custom-blue-izis, 500, 600, 700);
+$app-theme9-accent:  mat-palette($mat-custom-fruit-dove, 700, 600, 700);
+$app-theme9-warn: mat-palette($mat-red);
+$app-theme9: mat-light-theme($app-theme9-primary, $app-theme9-accent, $app-theme9-warn);

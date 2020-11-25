@@ -1,0 +1,180 @@
+// -----------------------------------------------------------------------------
+// This file contains main theme.
+// -----------------------------------------------------------------------------
+
+/* Pre-built Themes */
+// @import '~@angular/material/prebuilt-themes/indigo-pink.css';
+
+/* custom Theme using Material color Palette */
+// Helper functions(toolbox) for custom theme
+@import '~@angular/material/theming';
+// Material Mixin - mixin only once; it should not be included for each theme
+//This includes all common styles that are used by multiple components
+@include mat-core();
+
+//Import mixins for theme
+@import 'theme-mixins.scss';
+
+// import our custom themes
+@import 'default-theme.scss';
+@import 'theme1.scss';
+@import 'theme2.scss';
+@import 'theme3.scss';
+@import 'theme4.scss';
+@import 'theme5.scss';
+@import 'theme6.scss';
+@import 'theme7.scss';
+@import 'theme8.scss';
+@import 'theme9.scss';
+@import 'theme10.scss';
+@import 'theme11.scss';
+@import 'theme12.scss';
+@import 'theme13.scss';
+@import 'theme14.scss';
+@import 'theme15.scss';
+@import 'theme16.scss';
+@import 'theme17.scss';
+@import 'theme18.scss';
+@import 'theme19.scss';
+@import 'theme20.scss';
+@import 'theme21.scss';
+
+// default theme
+.default-theme {
+  // Applies theme styles for all components in the library as per material design spec
+  @include angular-material-theme($app-theme);
+  // Customize certain components in the library with different color
+  @include global-custom-theme($app-theme);
+}
+
+/*
+Below are the list of different themes, finalize a theme and remove all other theme classes and files
+which are not used
+*/
+// Theme 1
+.theme1 {
+  @include angular-material-theme($app-theme1);
+  @include global-custom-theme($app-theme1);
+}
+
+// Theme 2
+.theme2 {
+  @include angular-material-theme($app-theme2);
+  @include global-custom-theme($app-theme2);
+}
+
+// Theme 3
+.theme3 {
+  @include angular-material-theme($app-theme3);
+  @include global-custom-theme($app-theme3);
+}
+
+// Theme 4 using custom palette
+.theme4 {
+  @include angular-material-theme($app-theme4);
+  @include global-custom-theme($app-theme4);
+}
+
+// Theme 5 using custom palette
+.theme5 {
+  @include angular-material-theme($app-theme5);
+  @include global-custom-theme($app-theme5);
+}
+
+// Theme 6 using custom palette (netflix theme)
+.theme6 {
+  @include angular-material-theme($app-theme6);
+  @include global-custom-theme($app-theme6);
+}
+
+// Theme 7 using custom palette
+.theme7 {
+  @include angular-material-theme($app-theme7);
+  @include global-custom-theme($app-theme7);
+}
+
+// Theme 8 using custom palette
+.theme8 {
+  @include angular-material-theme($app-theme8);
+  @include global-custom-theme($app-theme8);
+}
+
+// Theme 9 using custom palette
+.theme9 {
+  @include angular-material-theme($app-theme9);
+  @include global-custom-theme($app-theme9);
+}
+
+// Theme 10 using custom palette
+.theme10 {
+  @include angular-material-theme($app-theme10);
+  @include global-custom-theme($app-theme10);
+}
+
+// Theme 11 using custom palette
+.theme11 {
+  @include angular-material-theme($app-theme11);
+  @include global-custom-theme($app-theme11);
+}
+
+// Theme 12 using custom palette
+.theme12 {
+  @include angular-material-theme($app-theme12);
+  @include global-custom-theme($app-theme12);
+}
+
+// Theme 13 using custom palette
+.theme13 {
+  @include angular-material-theme($app-theme13);
+  @include global-custom-theme($app-theme13);
+}
+
+// Theme 14 using custom palette
+.theme14 {
+  @include angular-material-theme($app-theme14);
+  @include global-custom-theme($app-theme14);
+}
+
+// Theme 15 using custom palette and applying gradient colors
+.theme15 {
+  @include angular-material-theme($app-theme15);
+  @include global-gradient-theme($app-theme15);
+}
+
+// Theme 16 using custom palette and applying gradient colors
+.theme16 {
+  @include angular-material-theme($app-theme16);
+  @include global-gradient-theme($app-theme16);
+}
+
+// Theme 17 using custom palette and applying gradient colors
+.theme17 {
+  @include angular-material-theme($app-theme17);
+  @include global-gradient-theme($app-theme17);
+}
+
+// Theme 18 using custom palette and applying gradient colors
+.theme18 {
+  @include angular-material-theme($app-theme18);
+  @include global-gradient-theme2($app-theme18);
+}
+
+// Theme 19 using custom palette and applying gradient colors - Expedia look like theme
+.theme19 {
+  @include angular-material-theme($app-theme19);
+  @include global-gradient-theme3($app-theme19);
+}
+
+// Theme 20 using custom palette and applying gradient colors
+.theme20 {
+  @include angular-material-theme($app-theme20);
+  @include global-gradient-theme4($app-theme20);
+  @include global-custom-theme($app-theme20);
+}
+
+// Theme 21 using custom palette and applying gradient colors - firebase website like theme
+.theme21 {
+  @include angular-material-theme($app-theme21);
+  @include global-gradient-theme3($app-theme21);
+  @include global-custom-theme($app-theme21);
+}

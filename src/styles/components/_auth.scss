@@ -1,0 +1,51 @@
+.auth-popup-container {
+  display: flex;
+  width: 100%;
+  text-align: center;
+  flex-direction: column;
+}
+
+#auth-fb {
+  width: 130px;
+  color:#fff;
+  background:#3B5998;
+  border: 1px solid #95989A;
+}
+
+#auth-google {
+  width: 130px;
+  background: #fff;
+  border: 1px solid #95989A;
+}
+
+.auth-note,
+.auth-link {
+  font-size: 14px;
+  font-style: normal;
+  font-variant-ligatures: normal;
+	font-variant-caps: normal;
+	font-variant-numeric: normal;
+	font-variant-east-asian: normal;
+	font-stretch: normal;
+  line-height: 24px;
+}
+
+.auth-note {
+  font-weight: 200;
+}
+
+.auth-link {
+  font-weight: 400;
+  text-decoration: none;
+}
+
+.auth-close-btn {
+  float:right;
+  cursor: pointer;
+}
+
+.auth-page-tite {
+  font-size: 24px;
+  font-weight: 400;
+  color: rgba(0,0,0,.87);
+}

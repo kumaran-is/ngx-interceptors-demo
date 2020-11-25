@@ -1,0 +1,9 @@
+// -----------------------------------------------------------------------------
+// This file contains custom theme18
+// -----------------------------------------------------------------------------
+@import 'custom-palette.scss';
+
+$app-theme18-primary: mat-palette($mat-blue, 700, 600, 700);
+$app-theme18-accent:  mat-palette($mat-red, 500, 600, 700);
+$app-theme18-warn: mat-palette($mat-red);
+$app-theme18: mat-light-theme($app-theme18-primary, $app-theme18-accent, $app-theme18-warn);

@@ -1,0 +1,7 @@
+// -----------------------------------------------------------------------------
+// This file contains custom theme2.
+// -----------------------------------------------------------------------------
+$app-theme2-primary: mat-palette($mat-deep-purple, 700, 500, 900);
+$app-theme2-accent: mat-palette($mat-orange, A700, A200, A700);
+$app-theme2-warn: mat-palette($mat-red);
+$app-theme2: mat-light-theme($app-theme2-primary, $app-theme2-accent, $app-theme2-warn);

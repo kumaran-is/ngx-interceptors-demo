@@ -1,0 +1,7 @@
+// -----------------------------------------------------------------------------
+// This file contains custom theme13
+// -----------------------------------------------------------------------------
+$app-theme13-primary: mat-palette($mat-cyan, 500, 600, 700);
+$app-theme13-accent:  mat-palette($mat-grey, 500, 600, 700);
+$app-theme13-warn: mat-palette($mat-red);
+$app-theme13: mat-light-theme($app-theme13-primary, $app-theme13-accent, $app-theme13-warn);

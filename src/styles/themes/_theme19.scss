@@ -1,0 +1,9 @@
+// -----------------------------------------------------------------------------
+// This file contains custom theme19 - Expedia look like theme
+// -----------------------------------------------------------------------------
+@import 'custom-palette.scss';
+
+$app-theme19-primary: mat-palette($mat-custom-yellow, 700, 600, 700);
+$app-theme19-accent:  mat-palette($mat-custom-princess-blue, 500, 600, 700);
+$app-theme19-warn: mat-palette($mat-red);
+$app-theme19: mat-light-theme($app-theme19-primary, $app-theme19-accent, $app-theme19-warn);

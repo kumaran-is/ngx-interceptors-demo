@@ -1,0 +1,8 @@
+// -----------------------------------------------------------------------------
+// This file contains custom theme4 that uses custom palette colors
+// -----------------------------------------------------------------------------
+@import 'custom-palette.scss';
+$app-theme4-primary: mat-palette($mat-custom-emerald, 700, 400, 700);
+$app-theme4-accent:  mat-palette($mat-custom-orange-tiger, 500, 700, 900);
+$app-theme4-warn: mat-palette($mat-red);
+$app-theme4: mat-light-theme($app-theme4-primary, $app-theme4-accent, $app-theme4-warn);

@@ -1,0 +1,61 @@
+@import '~src/styles/themes/themes';
+
+$accent: map-get($app-theme, primary);
+
+.app-loading {
+  position: relative;
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  .spinner {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 200px;
+    height: 200px;
+    margin: auto;
+    transform-origin: center center;
+    animation: rotate 2s linear infinite;
+    .path {
+      stroke-dasharray: 1, 200;
+      stroke-dashoffset: 0;
+      stroke: mat-color($accent);
+      animation: dash 1.5s ease-in-out infinite;
+      stroke-linecap: round;
+    }
+  }
+  .logo {
+    width: 100px;
+    height: 100px;
+    // this way asset gets processed by webpack
+    background: url('../../assets/images/loader.gif') center center no-repeat;
+  }
+}
+
+@keyframes rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+@keyframes dash {
+  0% {
+    stroke-dasharray: 1, 200;
+    stroke-dashoffset: 0;
+  }
+
+  50% {
+    stroke-dasharray: 89, 200;
+    stroke-dashoffset: -35px;
+  }
+
+  100% {
+    stroke-dasharray: 89, 200;
+    stroke-dashoffset: -124px;
+  }
+}

@@ -1,0 +1,10 @@
+// -----------------------------------------------------------------------------
+// This file contains custom theme5 that uses custom palette colors
+// -----------------------------------------------------------------------------
+
+@import 'custom-palette.scss';
+
+$app-theme5-primary: mat-palette($mat-custom-princess-blue, 700, 400, 700);
+$app-theme5-accent:  mat-palette($mat-custom-yellow, 900, 400, 900);
+$app-theme5-warn: mat-palette($mat-red);
+$app-theme5: mat-light-theme($app-theme5-primary, $app-theme5-accent, $app-theme5-warn);

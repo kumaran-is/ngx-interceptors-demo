@@ -1,0 +1,10 @@
+// -----------------------------------------------------------------------------
+// This file contains custom theme8 that uses custom palette colors
+// -----------------------------------------------------------------------------
+
+@import 'custom-palette.scss';
+
+$app-theme8-primary: mat-palette($mat-custom-chilly-red, 500, 600, 700);
+$app-theme8-accent:  mat-palette($mat-custom-mimosa, 900, 600, 700);
+$app-theme8-warn: mat-palette($mat-red);
+$app-theme8: mat-light-theme($app-theme8-primary, $app-theme8-accent, $app-theme8-warn);

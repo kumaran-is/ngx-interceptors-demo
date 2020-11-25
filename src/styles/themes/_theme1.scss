@@ -1,0 +1,7 @@
+// -----------------------------------------------------------------------------
+// This file contains custom theme1.
+// -----------------------------------------------------------------------------
+$app-theme1-primary: mat-palette($mat-indigo, 700, 100, 700);
+$app-theme1-accent:  mat-palette($mat-amber, A700, A100, A700);
+$app-theme1-warn: mat-palette($mat-red);
+$app-theme1: mat-light-theme($app-theme1-primary, $app-theme1-accent, $app-theme1-warn);
