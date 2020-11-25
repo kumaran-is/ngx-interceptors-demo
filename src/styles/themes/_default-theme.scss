@@ -14,6 +14,11 @@ Background - Colors used for element backgrounds. */
  For each palette, you can optionally specify a default, lighter, and darker hue
  using the function mat-palette($base-palette, $default: 500, $lighter: 100, $darker: 700)
 */
+// -----------------------------------------------------------------------------
+// This file contains custom theme - Expedia look alike theme
+// -----------------------------------------------------------------------------
+@import 'custom-palette.scss';
+
 $app-default-primary: mat-palette($mat-custom-crimson-red, 500, 600, 700);
 $app-default-accent:  mat-palette($mat-custom-raisin-black, 500, 600, 700);
 // The warn palette is optional (defaults to red).

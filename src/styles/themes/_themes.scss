@@ -14,41 +14,14 @@
 @import 'theme-mixins.scss';
 
 /* import our custom themes */
-
-/*
 // Default theme netflix reverse theme(red primary/black as accent)
-@import 'default-theme.scss'; */
+@import 'default-theme.scss';
 
-/*
-// nextflix theme
-@import 'netflix-theme.scss'; */
-
-
-//Expedia.com site look alike theme
-@import 'expedia-theme.scss';
-
-/*
 // default theme - Netflix reverse theme
 .default-theme {
   // Applies theme styles for all components in the library as per material design spec
   @include angular-material-theme($app-default);
   // Customize certain components in the library with different color
   @include global-custom-theme($app-default);
-}
-*/
-
-// Netflix theme
-/*
-.netflix-theme {
-  @include angular-material-theme($app-netflix);
-  @include global-custom-theme($app-netflix);
-}
-*/
-
-
-// Expedia.com site look alike theme
-.expedia-theme {
-  @include angular-material-theme($app-expedia);
-  @include global-custom-theme($app-expedia);
 }
 

@@ -1,6 +1,6 @@
 @import '~src/styles/themes/themes';
 
-$accent: map-get($app-expedia, primary);
+$accent: map-get($app-default, primary);
 
 .app-loading {
   position: relative;
