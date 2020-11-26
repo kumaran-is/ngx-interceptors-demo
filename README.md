@@ -23,7 +23,6 @@ Library | Version | Notes
 [Angular CLI](https://github.com/angular/angular-cli) | 11.0.x | Development tools and libraries specialized for Angular
 [Angular Material](https://material.angular.io/) | 11.x.x | Material Design components for Angular
 [RxJS](https://rxjs-dev.firebaseapp.com/) | 6.6.x | A reactive programming library for JavaScript.
-[ngx-toastr](https://github.com/scttcper/ngx-toastr) | 13.1.0. | Angular Toast Component
 
 ## Quick Start
 
