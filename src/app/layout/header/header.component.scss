@@ -1,31 +1,30 @@
 @import '~src/styles/themes/theme-variables';
 @import '~src/styles/components/menu';
 .toolbar {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 60px;
-  display: flex;
-  align-items: center;
-  background-color: $primary;
-  color: white;
-  font-weight: 500;
-}
-.toolbar .title {
-  margin-left: 10px;
-  margin-top: 12px;
-}
-
-.toolbar img {
-  margin-left: 10px;
-}
-.toolbar .twitter-logo {
-  margin-right: 15px;
-}
-
-.toolbar .menu-btn {
-  margin-left:10px;
-  line-height:30px;
+	position: fixed;
+	top: 0;
+	z-index: 1;
+	width: 100%;
+	left: 0;
+	right: 0;
+	height: 60px;
+	display: flex;
+	align-items: center;
+	background-color: $primary;
+	color: white;
+	font-weight: 500;
+	.title {
+		margin-left: 10px;
+	}
+	img {
+		margin-left: 10px;
+	}
+	.twitter-logo {
+		margin-right: 15px;
+	}
+	.menu-btn {
+		margin-left: 10px;
+		line-height: 30px;
+	}
 }
 
