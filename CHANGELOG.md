@@ -3,6 +3,8 @@
 #### Features
 
 * Added proxy setup to talk to backend service.[PR 6](https://github.com/kumaran-is/ngx-interceptors-demo/pull/6).
+
+* Implemented custom theme, organized and modularized scss files.[PR 6](https://github.com/kumaran-is/ngx-interceptors-demo/pull/6).
 #### Bug Fixes
 
 * NA
