@@ -14,14 +14,22 @@
 	color: white;
 	font-weight: 500;
 	.title {
-		margin-left: 10px;
-	}
+    margin-left: 10px;
+    color: $accent;
+  }
+
 	img {
-		margin-left: 10px;
-	}
+    margin-left: 10px;
+  }
+
+  .logo {
+    width: 40px;
+  }
+
 	.twitter-logo {
 		margin-right: 15px;
-	}
+  }
+
 	.menu-btn {
 		margin-left: 10px;
 		line-height: 30px;

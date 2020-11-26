@@ -1,12 +1,14 @@
 <div class="toolbar">
   <mat-toolbar color="primary" role="navigation"  class="toolbar" >
     <mat-toolbar-row>
-      <img
-        width="40"
-        alt="Apple Logo"
-        src="assets/images/logo.png"
-      />
-      <div class="title"><h3>Angular Interceptors Demo</h3></div>
+      <a mat-button [routerLink]="['/home']">
+        <img
+          class="logo"
+          alt="Apple Logo"
+          src="assets/images/logo.png"
+        />
+      </a>
+      <a role="banner" mat-button [routerLink]="['/home']" class="title"><h3>Angular Interceptors Demo</h3></a>
       <div class="spacer"></div>
       <button [routerLink]="['/home']" [routerLinkActive]="['menu-active']" mat-flat-button class="menu-btn" color="primary">Home</button>
       <button [routerLink]="['/search']" [routerLinkActive]="['menu-active']" mat-flat-button class="menu-btn" color="primary">Search</button>
