@@ -90,7 +90,7 @@ a:hover {
 @import './base/base', './base/fonts', './base/reset', './base/typography';
 
 // 4. Components
-@import './components/app-loading',  './components/button', './components/form', './components/parallax';
+@import './components/app-loading',  './components/menu', './components/button', './components/form', './components/parallax';
 
 // 5. Themes
 @import './themes/theme-variables',  './themes/theme-mixins',  './themes/themes';

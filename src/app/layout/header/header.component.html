@@ -4,14 +4,14 @@
       <img
         width="40"
         alt="Apple Logo"
-        src="assets/images/apple.svg"
+        src="assets/images/logo.png"
       />
       <div class="title"><h2>Angular Interceptors Demo</h2></div>
       <div class="spacer"></div>
-      <button [routerLink]="['/home']" mat-flat-button class="menu-btn" color="primary">Home</button>
-      <button [routerLink]="['/search']" mat-flat-button class="menu-btn" color="primary">Search</button>
-      <button [routerLink]="['/sequential']" mat-flat-button class="menu-btn" color="primary">Sequential</button>
-      <button [routerLink]="['/parallel']" mat-flat-button class="menu-btn" color="primary">Parallel</button>
+      <button [routerLink]="['/home']" [routerLinkActive]="['menu-active']" mat-flat-button class="menu-btn" color="primary">Home</button>
+      <button [routerLink]="['/search']" [routerLinkActive]="['menu-active']" mat-flat-button class="menu-btn" color="primary">Search</button>
+      <button [routerLink]="['/sequential']" [routerLinkActive]="['menu-active']" mat-flat-button class="menu-btn" color="primary">Sequential</button>
+      <button [routerLink]="['/parallel']" [routerLinkActive]="['menu-active']" mat-flat-button class="menu-btn" color="primary">Parallel</button>
       <a aria-label="application source code in github" target="_blank"
         rel="noopener" href="https://github.com/kumaran-is/ngx-interceptors-demo" title="Github">
         <img src="assets/images/github-logo.svg">
