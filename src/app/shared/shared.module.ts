@@ -1,17 +1,9 @@
 import { NgModule } from '@angular/core';
 import { ReactiveFormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
+import { MaterialModule } from '@shared/material.module';
 import { AgGridModule } from 'ag-grid-angular';
 import { PageTitleComponent } from '@components/page-title/page-title.component';
-import { MatButtonModule } from '@angular/material/button';
-import { MatCardModule } from '@angular/material/card';
-import { MatDialogModule } from '@angular/material/dialog';
-import { MatInputModule } from '@angular/material/input';
-import { MatProgressBarModule } from '@angular/material/progress-bar';
-import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
-import { MatSnackBarModule } from '@angular/material/snack-bar';
-import { MatTableModule } from '@angular/material/table';
-import { MatToolbarModule } from '@angular/material/toolbar';
 import { CountryCardComponent } from '@components/country-card/country-card.component';
 import { CountryTableComponent } from '@components/country-table/country-table.component';
 import { WeatherCardComponent } from '@components/weather-card/weather-card.component';
@@ -34,29 +26,13 @@ import { NavLoaderComponent } from './components/nav-loader/nav-loader.component
   imports: [
     CommonModule,
     ReactiveFormsModule,
-    AgGridModule.withComponents([]),
-    MatButtonModule,
-    MatCardModule,
-    MatDialogModule,
-    MatInputModule,
-    MatProgressBarModule,
-    MatProgressSpinnerModule,
-    MatSnackBarModule,
-    MatTableModule,
-    MatToolbarModule
+    MaterialModule,
+    AgGridModule.withComponents([])
   ],
   exports: [
     CommonModule,
     ReactiveFormsModule,
-    MatButtonModule,
-    MatCardModule,
-    MatDialogModule,
-    MatInputModule,
-    MatProgressBarModule,
-    MatProgressSpinnerModule,
-    MatSnackBarModule,
-    MatTableModule,
-    MatToolbarModule,
+    MaterialModule,
     AgGridModule,
     PageTitleComponent,
     CountryCardComponent,
