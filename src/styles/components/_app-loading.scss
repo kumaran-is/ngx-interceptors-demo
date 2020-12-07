@@ -1,0 +1,13 @@
+.app-loading {
+  position: relative;
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.app-loading img {
+  height: 150px;
+  width: 150px;
+}

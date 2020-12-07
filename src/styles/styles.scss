@@ -1,7 +1,4 @@
 /* You can add global styles to this file, and also import other style files */
-// ag-Grid styles
-@import "../node_modules/ag-grid-community/dist/styles/ag-grid.css";
-@import "../node_modules/ag-grid-community/dist/styles/ag-theme-alpine.css";
 body {
   font-family: Roboto, 'Helvetica Neue', sans-serif;
   font-size: 14px;
@@ -9,7 +6,6 @@ body {
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-
 }
 
 h1,
@@ -80,3 +76,21 @@ a:hover {
 	}
 }
 
+/* You can add global styles to this file, and also import other style files */
+// -------------------------------------------------------------------------------------------------------------------
+// Entry point of global application style. You can add global styles to this file, and also import other style files
+// Component-specific style should not go here and be included directly as part of the components.
+// -------------------------------------------------------------------------------------------------------------------
+@charset 'UTF-8';
+
+// 1. Configurations and helpers
+@import './helpers/variables', './helpers/functions', './helpers/mixins';
+
+// 2. Base Stuff
+@import './base/reset', './base/typography';
+
+// 3. Themes
+@import './themes/theme-variables',  './themes/theme-mixins',  './themes/themes';
+
+// 4. Components
+@import './components/app-loading',  './components/menu', './components/button', './components/form', './components/parallax';

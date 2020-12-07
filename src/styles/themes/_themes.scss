@@ -1,0 +1,24 @@
+// -----------------------------------------------------------------------------
+// This file contains main theme.
+// -----------------------------------------------------------------------------
+
+/* custom Theme using Material color Palette */
+// Helper functions(toolbox) for custom theme
+@import '~@angular/material/theming';
+
+// Material Mixin - mixin only once; it should not be included for each theme
+//This includes all common styles that are used by multiple components
+@include mat-core();
+
+//Import mixins for theme
+@import 'theme-mixins.scss';
+
+/* import our custom themes  variables*/
+@import 'theme-variables.scss';
+
+// default theme - Netflix reverse theme
+  // Applies theme styles for all components in the library as per material design spec
+  @include angular-material-theme($app-default);
+  // Customize certain components in the library with different color
+  @include global-custom-theme($app-default);
+ // @include global-gradient-theme4($app-default);

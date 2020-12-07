@@ -11,7 +11,8 @@ There are 2 ways you can launch the application :
 
 1. [Dependencies and Libraries](#dependencies-and-libraries)
 2. [Quick Start](#quick-start)
-3. [Status and Issues](#status-and-issues)
+3. [Analyzing Angular Bundle](#analyzing-angular-bundle)
+4. [Status and Issues](#status-and-issues)
 
 ## Dependencies and Libraries
 
@@ -23,7 +24,6 @@ Library | Version | Notes
 [Angular CLI](https://github.com/angular/angular-cli) | 11.0.x | Development tools and libraries specialized for Angular
 [Angular Material](https://material.angular.io/) | 11.x.x | Material Design components for Angular
 [RxJS](https://rxjs-dev.firebaseapp.com/) | 6.6.x | A reactive programming library for JavaScript.
-[ngx-toastr](https://github.com/scttcper/ngx-toastr) | 13.1.0. | Angular Toast Component
 
 ## Quick Start
 
@@ -50,7 +50,18 @@ Library | Version | Notes
  npm run start:prod
   ```
 
-## Status and Issues
+## Analyzing Angular Bundle
+
+[Webpack Bundle Analyzer](https://www.npmjs.com/package/webpack-bundle-analyzer) can be used to visualize the final Angular bundles and to find out what modules/part of the code make up the most of its size.
+
+Run the analyzer with the following command:
+
+  ```bash
+  npm run analyze
+  ```
+
+  You should then be able to see your analysis  at http://localhost:8888:
+  ## Status and Issues
 
 * [Change History](./CHANGELOG.md).
 * [Issue tracker](https://github.com/kumaran-is/ngx-interceptors-demo/issues?state=open)

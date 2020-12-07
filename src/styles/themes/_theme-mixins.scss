@@ -1,0 +1,79 @@
+// -----------------------------------------------------------------------------
+// This file contains scss mixins for themes
+// -----------------------------------------------------------------------------
+
+@mixin global-custom-theme($theme) {
+  // Derive primary, accent and warn color from theme
+  $primary: map-get($theme, primary);
+  $accent: map-get($theme, accent);
+  $warn: map-get($theme, warn);
+  $foreground: map-get($theme, foreground);
+  $background: map-get($theme, background);
+  // use function mat-color() to extract individual colors from a palette.
+  a {
+    &:hover {
+      color:mat-color($accent);
+    }
+  }
+
+  .menu-active {
+    color: mat-color($accent);
+  }
+}
+
+/* Gradient style 1: Using 2 colors with 3 stops: Use this optional mixins if you want to apply gradient color to Angular Material apps */
+@mixin global-gradient-theme($theme) {
+  $primary: map-get($theme, primary);
+  $accent: map-get($theme, accent);
+
+  .mat-primary  {
+    background: linear-gradient(to right, mat-color($primary, 200)  0%, mat-color($accent, 300) 51%, mat-color($primary, 900) 100%) !important;
+  }
+
+  .mat-accent  {
+    background: linear-gradient(to right, mat-color($accent, 200)  0%, mat-color($primary, 500) 51%, mat-color($accent, 900) 100%) !important;
+  }
+}
+
+/* Gradient style 2: Using same color with 3 stops: Use this optional mixins if you want to apply gradient color to Angular Material apps */
+@mixin global-gradient-theme2($theme) {
+  $primary: map-get($theme, primary);
+  $accent: map-get($theme, accent);
+
+  .mat-primary  {
+    background: linear-gradient(to right, mat-color($primary, 200) 0%, mat-color($primary, 500) 51%, mat-color($primary, 700) 100%) !important;
+  }
+
+  .mat-accent  {
+    background: linear-gradient(to right, mat-color($accent, 200) 0%, mat-color($accent, 500) 51%, mat-color($accent, 700) 100%) !important;
+  }
+}
+
+/* Gradient style 3: Using same color with 2 stops: Use this optional mixins if you want to apply gradient color to Angular Material apps */
+@mixin global-gradient-theme3($theme) {
+  $primary: map-get($theme, primary);
+  $accent: map-get($theme, accent);
+
+  .mat-primary  {
+    background: linear-gradient(to right, mat-color($primary, 500) 0%, mat-color($primary, 700) 100%) !important;
+  }
+
+  .mat-accent  {
+    background: linear-gradient(to right, mat-color($accent, 500) 0%, mat-color($accent, 700) 100%) !important;
+  }
+}
+
+/* Gradient style 4: Using 2 colors with 2 stops: Use this optional mixins if you want to apply gradient color to Angular Material apps */
+@mixin global-gradient-theme4($theme) {
+  $primary: map-get($theme, primary);
+  $accent: map-get($theme, accent);
+
+  .mat-primary  {
+    background: linear-gradient(to right, mat-color($primary, 400) 0%, mat-color($accent, 400) 100%) !important;
+  }
+
+  .mat-accent  {
+    background: linear-gradient(to right, mat-color($accent, 300) 0%, mat-color($primary, 300) 100%) !important;
+  }
+
+}

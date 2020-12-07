@@ -1,0 +1,71 @@
+// -----------------------------------------------------------------------------
+// This file contains all the custom palette colors.
+// -----------------------------------------------------------------------------
+
+//netflix red color
+$mat-custom-crimson-red: (
+    50 : #fce1e3,
+    100 : #f7b5b9,
+    200 : #f2848a,
+    300 : #ed535b,
+    400 : #e92e37,
+    500 : #e50914,
+    600 : #e20812,
+    700 : #de060e,
+    800 : #da050b,
+    900 : #d30206,
+    A100 : #fffbfb,
+    A200 : #ffc8c8,
+    A400 : #ff9595,
+    A700 : #ff7b7c,
+    contrast: (
+        50 : $dark-primary-text,
+        100 : $dark-primary-text,
+        200 : $dark-primary-text,
+        300 : $dark-primary-text,
+        400 : $light-primary-text,
+        500 : $light-primary-text,
+        600 : $light-primary-text,
+        700 : $light-primary-text,
+        800 : $light-primary-text,
+        900 : $light-primary-text,
+        A100 : $dark-primary-text,
+        A200 : $dark-primary-text,
+        A400 : $dark-primary-text,
+        A700 : $dark-primary-text,
+    )
+);
+
+// netflix black color
+$mat-custom-raisin-black: (
+  50 : #e4e4e4,
+  100 : #bdbcbc,
+  200 : #918f8f,
+  300 : #646262,
+  400 : #434141,
+  500 : #221f1f,
+  600 : #1e1b1b,
+  700 : #191717,
+  800 : #141212,
+  900 : #0c0a0a,
+  A100 : #ff5252,
+  A200 : #ff1f1f,
+  A400 : #eb0000,
+  A700 : #d20000,
+  contrast: (
+      50 : $dark-primary-text,
+      100 : $dark-primary-text,
+      200 : $dark-primary-text,
+      300 : $light-primary-text,
+      400 : $light-primary-text,
+      500 : $light-primary-text,
+      600 : $light-primary-text,
+      700 : $light-primary-text,
+      800 : $light-primary-text,
+      900 : $light-primary-text,
+      A100 : $dark-primary-text,
+      A200 : $light-primary-text,
+      A400 : $light-primary-text,
+      A700 : $light-primary-text,
+  )
+);
