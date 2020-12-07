@@ -87,7 +87,7 @@ a:hover {
 @import './helpers/variables', './helpers/functions', './helpers/mixins';
 
 // 2. Base Stuff
-@import './base/base', './base/fonts', './base/reset', './base/typography';
+@import './base/reset', './base/typography';
 
 // 3. Themes
 @import './themes/theme-variables',  './themes/theme-mixins',  './themes/themes';
