@@ -12,7 +12,7 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "analyze": "npm run build:prod -- --stats-json && webpack-bundle-analyzer ./dist/ngx-interceptors-demo/stats.json",
-    "git-publish": "npm run build:prod && npx angular-cli-ghpages --dir=dxist/ngx-interceptors-demo --branch=gh-pages"
+    "git-publish": "npm run build:prod && npx angular-cli-ghpages --dir=dist/ngx-interceptors-demo --branch=gh-pages"
   },
   "private": true,
   "dependencies": {
