@@ -1,8 +1,11 @@
 /**
  * Basic typography style for copy text
  */
+ @import '~src/styles/helpers/variables';
 
-/* body {
-  color: $text-color;
-  font: normal 125% / 1.4 $text-font-stack;
-} */
+html, body {
+  font-family: $font_family;
+  font-size: $default_font_size;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
