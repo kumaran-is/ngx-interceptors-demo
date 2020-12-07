@@ -86,11 +86,11 @@ a:hover {
 // 1. Configurations and helpers
 @import './helpers/variables', './helpers/functions', './helpers/mixins';
 
-// 3. Base Stuff
+// 2. Base Stuff
 @import './base/base', './base/fonts', './base/reset', './base/typography';
+
+// 3. Themes
+@import './themes/theme-variables',  './themes/theme-mixins',  './themes/themes';
 
 // 4. Components
 @import './components/app-loading',  './components/menu', './components/button', './components/form', './components/parallax';
-
-// 5. Themes
-@import './themes/theme-variables',  './themes/theme-mixins',  './themes/themes';
